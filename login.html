@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+background-color:blue;}
+form {border: 3px solid #f1f1f1;
+background-color:white;
+  border-radius:20px;
+  margin:300px;
+    }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+p,h2{
+text-align:center;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 100px;
+  margin: auto auto;
+  border:0px ;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+  
+        <div class="container">
+        <h2>Login to your Account</h2>
+          
+          <label for="email"><b>
+          Email</b><label><input type="text" placeholder="manoj@richpanel.com" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="........" name="psw" required>
+           
+           <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          
+          <button type="submit">Login</button>
+          <label>
+          
+          <p>New to MyApp? <a href="login.html">Sign Up</a></p>
+        </div>
+      
+        
+      </form>
+    
+</body>
+</html>
